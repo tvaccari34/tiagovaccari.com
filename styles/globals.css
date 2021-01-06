@@ -1,9 +1,15 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  background: #312E38;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -12,5 +18,14 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: 0;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+
