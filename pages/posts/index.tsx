@@ -4,6 +4,10 @@ import { PostsList } from '../../styles/styles.posts';
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link';
 import Header from '../../components/Header';
+
+import { GA_TRACKING_ID } from "../../lib/gtag";
+
+const isProduction = process.env.NODE_ENV === "production";
     
 
 type Post = {
@@ -39,6 +43,28 @@ const Posts: React.FC<{ posts: Post[]}> = (props) => {
         <>
             <Head>
               <title>Tiago Vaccari | Blog</title>
+              {/* enable analytics script only for production */}
+              {isProduction && (
+                <>
+                  <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+                  />
+                  <script
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{
+                      __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+                    }}
+                  />
+                </>
+              )}
             </Head>
             <Header />
             <PostsList>
