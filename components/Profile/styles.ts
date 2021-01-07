@@ -33,10 +33,10 @@ export const ProfileContent = styled.div`
         align-items: center;
         justify-content: center;
         margin-top: 24px;
-        
 
         a + a {
             margin-left: 36px;
+            
         }
 
     }

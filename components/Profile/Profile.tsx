@@ -16,10 +16,10 @@ const Profile: React.FC = ({children}) => {
                     <p>I born and raised in Jundiai-SP Brazil a lovely city with many italian roots. Now I'm living in Bournemouth UK which has the most beautiful beaches in UK, in my opinion 😃.</p>
                     <div className="links">
                         <nav>
-                            <a href="https://twitter.com/vaccari_tiago" target="_blank"><FiTwitter size={36}/></a>
-                            <a href="https://www.linkedin.com/in/tiago-vaccari-0b159a54/" target="_blank"><FiLinkedin size={36}/></a>
-                            <a href="https://www.instagram.com/tiagovaccari/" target="_blank"><FiInstagram size={36}/></a>
-                            <a href="https://www.facebook.com/tiago.vaccari.3" target="_blank"><FiFacebook size={36}/></a>
+                            <a href="https://twitter.com/vaccari_tiago" target="_blank"><FiTwitter color="#5BE7A9" size={36}/></a>
+                            <a href="https://www.linkedin.com/in/tiago-vaccari-0b159a54/" target="_blank"><FiLinkedin color="#5BE7A9" size={36}/></a>
+                            <a href="https://www.instagram.com/tiagovaccari/" target="_blank"><FiInstagram color="#5BE7A9" size={36}/></a>
+                            <a href="https://www.facebook.com/tiago.vaccari.3" target="_blank"><FiFacebook color="#5BE7A9" size={36}/></a>
                         </nav>
                     </div>
                 </ProfileContent>
