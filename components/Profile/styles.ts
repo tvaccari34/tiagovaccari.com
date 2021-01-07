@@ -28,6 +28,19 @@ export const ProfileContent = styled.div`
         margin-bottom: 24px;
     }
 
+    div.links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        
+
+        a + a {
+            margin-left: 36px;
+        }
+
+    }
+
     > p{
         margin-top: 12px;
     }

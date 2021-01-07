@@ -1,4 +1,5 @@
 import {ProfileContainer, ProfileContent} from './styles';
+import { FiTwitter, FiLinkedin, FiInstagram, FiFacebook } from 'react-icons/fi';
 
 const Profile: React.FC = ({children}) => {
     return (
@@ -13,7 +14,14 @@ const Profile: React.FC = ({children}) => {
                     <p>I would say I don't have a specific technology to call "my love", but I have been working with Microsoft stack most of that time (C#, MS Sql, Asp.Net, Entity Framework). Recently, I'm working with the stack .Net Framework, AngularJs, TypeScript, MongoDB, MySql.</p>
                     <p>In my spare time, I used to be with my family, friends or trying different flavors which can be a 🍺, 🍷 or a new tech to work with.</p> By the way, that blog was created using ReactJS, Next.js, TypeScript, Ghost CMS and Docker.
                     <p>I born and raised in Jundiai-SP Brazil a lovely city with many italian roots. Now I'm living in Bournemouth UK which has the most beautiful beaches in UK, in my opinion 😃.</p>
-                    <p>You can contact me on <a href='https://twitter.com/vaccari_tiago' target="_blank">Twitter</a>  </p>
+                    <div className="links">
+                        <nav>
+                            <a href="https://twitter.com/vaccari_tiago" target="_blank"><FiTwitter size={36}/></a>
+                            <a href="https://www.linkedin.com/in/tiago-vaccari-0b159a54/" target="_blank"><FiLinkedin size={36}/></a>
+                            <a href="https://www.instagram.com/tiagovaccari/" target="_blank"><FiInstagram size={36}/></a>
+                            <a href="https://www.facebook.com/tiago.vaccari.3" target="_blank"><FiFacebook size={36}/></a>
+                        </nav>
+                    </div>
                 </ProfileContent>
             </ProfileContainer>
         </>

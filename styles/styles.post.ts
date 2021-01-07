@@ -29,6 +29,12 @@ export const PostContent = styled.div`
         margin-top: 16px;
     }
 
+    h5{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 24px;
+    }
+
     p {
         margin-top: 8px;
     }
@@ -38,7 +44,7 @@ export const PostContent = styled.div`
     }
 
     li {
-        margin-top: 4px;
+        margin-top: 18px;
     }
 
     pre{
@@ -69,6 +75,15 @@ export const PostContent = styled.div`
         border-left: 1.5px solid;
         font-style: italic;
         font-size: 14px;
+    }
+    
+    a{
+        color: #A5F4D1;
+        transition: 0.2s;
+    }
+
+    a:hover{
+        opacity: 0.7;
     }
 
     strong{
