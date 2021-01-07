@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = "G-CEMR345Y9E";
+export const GA_TRACKING_ID = process.env.GA_TRACKING_ID_KEY;
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL): void => {
