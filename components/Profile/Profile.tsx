@@ -5,8 +5,8 @@ const Profile: React.FC = ({children}) => {
         <>
             <ProfileContainer>
                 <ProfileContent>
-                    <blockquote>"You simply have to put one foot in front of the other and keep going. Put blinders on and plow right ahead."</blockquote>
-                    <h5>George Lucas</h5>
+                    <blockquote>"The only way to discover the limits of the possible is to go beyond them into the impossible."</blockquote>
+                    <h5>Arthur C. Clarke</h5>
 
                     <p>Developer, dad, husband, cyclist. 
                         I'm passionate by code and technology.
