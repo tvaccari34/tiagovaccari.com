@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import { SecrectLabContainer, SecrectLabContent } from './styles';
+import { SecrectLabContainer, SecrectLabContent } from '../../styles/styles.secretlab';
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link';
 import Header from '../../components/Header';

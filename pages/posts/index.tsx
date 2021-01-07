@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head'
-import { PostsList } from './styles';
+import { PostsList } from '../../styles/styles.posts';
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link';
 import Header from '../../components/Header';

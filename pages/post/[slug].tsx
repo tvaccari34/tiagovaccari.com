@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Header from '../../components/Header'
-import { PostContainer, PostContent } from './styles';
+import { PostContainer, PostContent } from '../../styles/styles.post';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
