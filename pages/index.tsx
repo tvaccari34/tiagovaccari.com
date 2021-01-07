@@ -3,7 +3,6 @@ import Profile from '../components/Profile/Profile';
 import Header from '../components/Header';
 import Head from 'next/head'
 
-const name = 'Tiago Vaccari'
 export const siteTitle = "Tiago Vaccari | Fullstack Developer & Blogger"
 
 type Post = {
