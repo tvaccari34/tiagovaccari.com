@@ -13,6 +13,7 @@ export const ProfileContent = styled.div`
 
     margin: 48px auto;
     width: 720px;
+    padding: 24px;
 
     blockquote{
         color: #5BE7A9;

@@ -6,6 +6,8 @@ export const PostsList = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 24px;
+    margin-top: 32px;
     overflow-y: scroll;
 
     ul {

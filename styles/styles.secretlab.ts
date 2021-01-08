@@ -10,6 +10,7 @@ export const SecrectLabContainer = styled.div`
     margin-top: 96px;
 
     h1{
+        text-align: center;
         color: #5BE7A9;
     }
 `;

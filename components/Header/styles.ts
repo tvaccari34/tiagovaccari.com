@@ -1,14 +1,19 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+interface MenuProps {
+    isSmall: boolean;
+}
 
 export const Container = styled.header`
-    padding: 32px 0px;
+    display: flex;
+    height: 112px;
     background: #28262e;
 `;
 
 export const HeaderContainer = styled.div`
 
-    max-width: 1440px;
     display: flex; 
+    flex: 1;
     align-items: center;
     padding: 16px;
     justify-content: space-between;
@@ -17,17 +22,15 @@ export const HeaderContainer = styled.div`
 
 export const Profile = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    padding-left: 36px;
+    justify-content: space-around;
 
     > img {
         height: 160px;
-        margin-top: 124px;
+        margin-top: -28px;
+        margin-left: 64px;
         border-radius: 50%;
         transition: 0.2s;
-        margin-left: 0px;
-        margin-right: 24px;
         position: absolute;
 
         cursor: pointer;
@@ -42,22 +45,27 @@ export const Profile = styled.div`
         opacity: 0.8;
     }
 
-    strong{
-        margin-left: 320px;
-        font-size: 24px;
-    }
-
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.div<MenuProps>`
 
     display: flex;
-    margin-right: 52px;
+    flex: 1;
+
+    
+    /* align-content: space-between; */
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+
+    strong{
+        font-size: 24px;
+    }
     
 
     a {
         color: #5BE7A9;
-        margin: 16px;
+        margin: 8px;
         transition: 0.2s;
     }
 
@@ -65,6 +73,10 @@ export const Menu = styled.div`
         opacity: 0.8;
     }
 
-    
+    ${props => props.isSmall && css`
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 12px;
+    `}
     
 `;
