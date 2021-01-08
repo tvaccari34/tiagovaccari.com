@@ -7,8 +7,9 @@ export const PostContainer = styled.div`
 `;
 
 export const PostContent = styled.div`
-    margin: 48px auto;
+    margin: 54px auto;
     width: 720px;
+    padding: 24px;
 
     > div.timeToRead {
         display: flex;
