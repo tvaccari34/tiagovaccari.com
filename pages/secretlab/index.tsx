@@ -76,7 +76,7 @@ const SecrectLab: React.FC = () => {
                 {
                   isSecretDiscovered && (
                     <>
-                      <img src="./images/lab.svg" alt="Secret Lab"/>
+                      <img src="./images/lab.png" alt="Secret Lab"/>
                       <SecrectLabContent>
                         <p><h3>You got the secret, so maybe you deserve to know more about software development! But just wait...</h3></p>
                         <p><h3>You will need to prove your value! For that, you have to create a post about what you have learned during last week and tag me on Linkedin, Twitter, Instagram or Facebook.</h3></p>
