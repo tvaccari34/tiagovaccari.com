@@ -96,4 +96,24 @@ export const PostContent = styled.div`
         height: auto;
         margin-top: 12px;
     }
+
+    iframe{
+        padding: 12px;
+    }
+
+    figure{
+        padding: 12px;
+    }
+
+    .load_comments{
+        margin-top: 24px;
+        cursor: pointer;
+        color: #5BE7A9;
+
+        transition: 0.3s;
+    }
+
+    .load_comments:hover{
+        opacity: 0.7;
+    }
 `;

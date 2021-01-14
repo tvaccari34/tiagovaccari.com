@@ -107,9 +107,9 @@ const Post: React.FC<{post: Post}> = (props) => {
                     <div className="timeToRead">{post.reading_time} min read</div>
                     <div dangerouslySetInnerHTML={{__html: updateHttpToHttps(post.html)}}></div>
 
-                    {/* {enableLoadComments && (
-                        <p className={styles.goback} onClick={loadComments}>Load Comments</p>
-                    )} */}
+                    {enableLoadComments && (
+                        <p className="load_comments" onClick={loadComments}>Load Comments</p>
+                    )}
                     
                     <div id="disqus_thread"></div>
                 </PostContent>
