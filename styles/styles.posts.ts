@@ -19,7 +19,7 @@ export const PostsList = styled.div`
     li {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         height: 120px;
         margin: 12px 0;
         border-radius: 10px;

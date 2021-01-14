@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import { PostContainer, PostContent } from '../../styles/styles.post';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { updateHttpToHttps } from '../../lib/utils';
 
 import { GA_TRACKING_ID } from "../../lib/gtag";
 
@@ -87,13 +88,13 @@ const Post: React.FC<{post: Post}> = (props) => {
                         // eslint-disable-next-line react/no-danger
                         dangerouslySetInnerHTML={{
                         __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${GA_TRACKING_ID}', {
-                    page_path: window.location.pathname,
-                    });
-                `,
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', '${GA_TRACKING_ID}', {
+                            page_path: window.location.pathname,
+                            });
+                        `,
                         }}
                     />
                     </>
@@ -104,7 +105,7 @@ const Post: React.FC<{post: Post}> = (props) => {
                 <PostContent>
                     <h1>{post.title}</h1>
                     <div className="timeToRead">{post.reading_time} min read</div>
-                    <div dangerouslySetInnerHTML={{__html: post.html}}></div>
+                    <div dangerouslySetInnerHTML={{__html: updateHttpToHttps(post.html)}}></div>
 
                     {/* {enableLoadComments && (
                         <p className={styles.goback} onClick={loadComments}>Load Comments</p>
