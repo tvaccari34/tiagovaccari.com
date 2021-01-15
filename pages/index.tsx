@@ -44,7 +44,7 @@ const Home: React.FC<{ posts: Post[]}> = (props) => {
         />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Blog and personal website about a simple guy, who loves software development and share his experiments."
         />
         <meta
           property="og:image"
